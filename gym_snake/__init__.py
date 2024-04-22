@@ -6,10 +6,6 @@ for num_players in ['', '2s', '3s', '4s']:
             for grid_type in ['', 'Hex']:
                 env_id = '-'.join(['Snake', grid_type, grid_size, style, num_players]) + '-v0'.replace('--', '-')
                 entry_point = 'gym_snake.envs:' + '_'.join(['Snake', grid_type, grid_size, style, num_players]).replace('--', '-')
-                print("register(")
-                print("    id='" + env_id + "',")
-                print("    entry_point='" + entry_point + "'")
-                print(")")
 
                 pass
 
