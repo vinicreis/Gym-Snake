@@ -49,6 +49,12 @@ class Snake:
         self._deque.append(p)
         self._set.add(p)
 
+    def position(self):
+        return self._deque[-1]
+    
+    def direction(self):
+        return self._direction
+
     def contract(self):
         p_last = self._deque.popleft()
         self._set.remove(p_last)
